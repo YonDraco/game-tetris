@@ -369,4 +369,4 @@ function drop(){
         requestAnimationFrame(drop);
     }
 }
-drop()
+drop();
