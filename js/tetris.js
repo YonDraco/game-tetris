@@ -154,6 +154,7 @@ const Z = [
 const cvs = document.getElementById("tetris");
 const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
+const button = document.querySelector('#button')
 
 const ROW = 20;
 const COLUMN = 10;
