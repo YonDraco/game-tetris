@@ -1,11 +1,12 @@
 body{
-    margin: 100px 600px 0 0;
+    margin: 90px 600px 0 0;
     background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: 1380px auto;
 }
 h3{
     color: #fff;
+    margin: 0 auto;
 }
 #score {
     display: inline-block;
@@ -24,13 +25,7 @@ canvas{
     margin: 0 auto;
 }
 
-button{
-    font-weight: bold;
-    background-color: #fff;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
-    font-family: monospace;
+#button{
     cursor: pointer;
 }
 button:hover{

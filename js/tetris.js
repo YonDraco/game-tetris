@@ -184,7 +184,7 @@ function drawBoard() {
     }
 }
 drawBoard();
-
+// Màu các mảnh
 const PIECES = [
     [Z, "purple"],
     [S, "purple"],
@@ -206,11 +206,11 @@ function Piece(tetromino, color) {
     this.color = color;
     this.tetrominoN = 0;
     this.activeTetromino = this.tetromino[this.tetrominoN];
-    // Điều khiển các mảnh
+    // Vị trí mảnh đầu tiên khi rơi
     this.x = 3;
     this.y = -2;
 }
-
+// c là trục x, r là trục y
 Piece.prototype.fill = function (color) {
     for (r = 0; r < this.activeTetromino.length; r++) {
         for (c = 0; c < this.activeTetromino.length; c++) {
@@ -370,4 +370,13 @@ function drop() {
         requestAnimationFrame(drop);
     }
 }
-drop();
+
+var bool = false;
+function flag() {
+    bool = true;
+}
+if (!bool) {
+    button.onclick = function () {
+        drop();
+    }
+} 
