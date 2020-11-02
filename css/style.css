@@ -1,10 +1,11 @@
 body{
-    margin: 90px 600px 0 0;
+    margin: 45px 600px 0 0;
     background-image: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: 1380px auto;
 }
-h3{
+
+h5, h3{
     color: #fff;
     margin: 0 auto;
 }
@@ -14,12 +15,14 @@ h3{
 }
 
 div{
+    margin-top: 10px;
     font-size: 20px;
-    font-weight: bold;
-    font-family: monospace;
     text-align: center;
 }
-
+h5{
+    text-align: left;
+    margin: -500px auto 200px 100px;
+}
 canvas{
     display: block;
     margin: 0 auto;
@@ -28,6 +31,4 @@ canvas{
 #button{
     cursor: pointer;
 }
-button:hover{
-    background-color: yellow;
-}
+

@@ -155,7 +155,6 @@ const cvs = document.getElementById("tetris");
 const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
 const button = document.querySelector('#button')
-
 const ROW = 20;
 const COLUMN = 10;
 const SS = 20;
@@ -278,7 +277,6 @@ Piece.prototype.rotate = function () {
 }
 
 let score = 0;
-
 Piece.prototype.lock = function () {
     for (r = 0; r < this.activeTetromino.length; r++) {
         for (c = 0; c < this.activeTetromino.length; c++) {
@@ -341,7 +339,6 @@ Piece.prototype.collision = function (x, y, piece) {
 
 // Điều khiển các mảnh
 document.addEventListener("keydown", CONTROL);
-
 function CONTROL(event) {
     if (event.keyCode == 37) {
         p.moveLeft();
@@ -357,8 +354,10 @@ function CONTROL(event) {
     }
 }
 
+// Bắt đầu trò chơi
 let dropStart = Date.now();
 let gameOver = false;
+var bool = false;
 function drop() {
     let now = Date.now();
     let delta = now - dropStart;
@@ -370,8 +369,6 @@ function drop() {
         requestAnimationFrame(drop);
     }
 }
-
-var bool = false;
 function flag() {
     bool = true;
 }
@@ -380,3 +377,8 @@ if (!bool) {
         drop();
     }
 } 
+// Dừng trò chơi
+document.getElementById("button").addEventListener("dblclick", pause);
+function pause() {
+  alert("Pause! Click OK to continue playing");
+}
