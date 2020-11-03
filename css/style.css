@@ -4,7 +4,7 @@ html {
     background-size: 100% auto;
 }
 body{
-    margin-top: 100px;
+    margin-top: 10px;
 }
 h4,
 h2 {
@@ -28,7 +28,7 @@ h4 {
 }
 
 canvas {
-    margin: 0 800px 0 350px;
+    margin: 0 auto 0 265px;
 }
 
 #button {
