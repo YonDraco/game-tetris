@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <canvas id="tetris" width="250" height="500"></canvas>
-    <div>
-        <h2>Score = <span id="score">0</span></h2>
-        <img src="./css/icon.png" alt="button" id="button" onclick="flag()" width="70" height="70">
+    <div class="main">
+        <div>
+            <h2>Score = <span id="score">0</span></h2>
+            <img src="./css/icon.png" alt="button" id="button" onclick="flag()" width="70" height="70">
+            <h4><i>Tutorial: <br>
+                    1. Single click to start <br>
+                    2. Double click to pause<br>
+                    3. Use arrow keys to control<br>
+                    4. F5 to restart</i></h4>
+        </div>
+        <canvas id="tetris" width="250" height="500"></canvas>
     </div>
-        <h4><i>Tutorial: <br>
-                1. Single click to start <br>
-                2. Double click to pause<br>
-                3. Use arrow keys to control<br>
-                4. F5 to restart</i></h4>
-
-       
     <script src="./js/tetris.js"></script>
 </body>
 

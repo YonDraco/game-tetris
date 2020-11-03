@@ -2,15 +2,18 @@ html {
     background: url(bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+    font-size: 10px;
 }
-body{
-    margin-top: 30px;
-}
+
 h4,
 h2 {
     color: #fff;
-    margin-left: 100px;
-    margin-top: -20px;
+    font-weight: 400;
+}
+
+body {
+    margin: 4rem 2rem;
+    font-size: 1.8rem;
 }
 
 #score {
@@ -18,20 +21,32 @@ h2 {
     color: #fff;
 }
 
-div {
-    font-size: 20px;
-}
-
-h4 {
-    text-align: left;
-    margin: -600px auto 200px 50px;
+.main {
+    margin: 0 auto;
+    display: flex;
 }
 
 canvas {
-    margin: 0 auto 0 265px;
+    display: block;
+    margin-left: 4rem;
 }
 
 #button {
     cursor: pointer;
-    margin-left: 120px;
-} 
+}
+
+@media screen and (min-width: 1380px) {
+    html {
+        font-size: 12px;
+    }
+
+    canvas {
+        margin-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    html {
+        font-size: 8px;
+    }
+}
