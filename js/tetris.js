@@ -376,9 +376,9 @@ if (!bool) {
     button.onclick = function () {
         drop();
     }
-} 
+}
 // Dừng trò chơi
 document.getElementById("button").addEventListener("dblclick", pause);
 function pause() {
-  alert("Pause! Click OK to continue playing");
+    alert("Pause! Click OK to continue playing");
 }
