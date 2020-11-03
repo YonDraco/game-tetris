@@ -4,13 +4,13 @@ html {
     background-size: 100% auto;
 }
 body{
-    margin-right: 500px;
     margin-top: 100px;
 }
-h5,
-h3 {
+h4,
+h2 {
     color: #fff;
-    margin: 0 auto;
+    margin-left: 100px;
+    margin-top: -150px;
 }
 
 #score {
@@ -19,21 +19,19 @@ h3 {
 }
 
 div {
-    margin-top: 10px;
     font-size: 20px;
-    text-align: center;
 }
 
-h5 {
+h4 {
     text-align: left;
-    margin: -500px auto 200px 100px;
+    margin: -600px auto 200px 50px;
 }
 
 canvas {
-    display: block;
-    margin: 0 auto;
+    margin: 0 800px 0 350px;
 }
 
 #button {
     cursor: pointer;
-}
+    margin-left: 120px;
+} 

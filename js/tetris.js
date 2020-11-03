@@ -155,15 +155,15 @@ const cvs = document.getElementById("tetris");
 const ctx = cvs.getContext("2d");
 const scoreElement = document.getElementById("score");
 const button = document.querySelector('#button')
-const ROW = 20;
-const COLUMN = 10;
-const SS = 20;
+const ROW = 25;
+const COLUMN = 15;
+const SS = 25;
 const ES = "white";
 
 function drawSquare(x, y, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x * SS, y * SS, SS, SS);
-    ctx.strokeStyle = "black";
+    ctx.strokeStyle = "#848484";
     ctx.strokeRect(x * SS, y * SS, SS, SS);
 }
 
@@ -185,9 +185,9 @@ function drawBoard() {
 drawBoard();
 // Màu các mảnh
 const PIECES = [
-    [Z, "purple"],
-    [S, "purple"],
-    [T, "green"],
+    [Z, "#D358F7"],
+    [S, "#D358F7"],
+    [T, "#40FF00"],
     [O, "#FFFF44"],
     [L, "#FF8800"],
     [I, "#44FFFF"],
