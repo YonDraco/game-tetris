@@ -1,4 +1,4 @@
-### game-tetris
+### Game-tetris
 Project frontend 
 HTML, CSS and JS
 ### Link chơi game
